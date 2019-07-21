@@ -30,11 +30,9 @@ function getWeather(lat, long) {
 
   tempSection.addEventListener("click", changeDegree);
 
-  // For local testing you will need to use the following
-  // const proxy = "https://cors-anywhere.herokuapp.com/";
-  // const api = `${proxy}https://api.darksky.net/forecast/996e512a82a9af7349e7eb6f50ea3b22/${lat},${long}`;
-
-  const api = `https://api.darksky.net/forecast/996e512a82a9af7349e7eb6f50ea3b22/${lat},${long}`;
+  // Bypass CORS errors
+  const proxy = "https://cors-anywhere.herokuapp.com/";
+  const api = `${proxy}https://api.darksky.net/forecast/996e512a82a9af7349e7eb6f50ea3b22/${lat},${long}`;
 
   fetch(api)
   .then(response => {
