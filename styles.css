@@ -19,7 +19,7 @@ body {
   font-family: 'Fira Sans', sans-serif;
 }
 
-.location, .temperature {
+.location, .temperature, .hourly {
   height: 30vh;
   width: 50%;
   display: flex;
